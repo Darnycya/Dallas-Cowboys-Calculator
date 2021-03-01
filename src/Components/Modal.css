@@ -1,0 +1,21 @@
+.modal {
+  margin-top: -780px;
+margin-left: 380px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  margin-left: 870px;
+  margin-top: -100px;
+  
+}
+
+.X {
+  font-size: 11px;
+}
