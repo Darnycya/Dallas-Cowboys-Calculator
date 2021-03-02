@@ -4,10 +4,12 @@ class Results extends Component {
 
 
     render() {
-        let {result} = this.props;
+      let { result } = this.props;
+    
         return (
             <div className="result">
-                <p>{result}</p>
+            <p>{result}</p>
+            
             </div>
     )
         ;

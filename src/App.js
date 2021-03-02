@@ -45,10 +45,21 @@ class App extends Component {
 
 
     calculate = () => {
-        var checkResult = ''
-        if(this.state.result.includes('--')){
-            checkResult = this.state.result.replace('--','+')
-        } else if (this.state.result.includes('4')) {
+        let checkResult = ''
+      if (this.state.result.includes('--')) {
+        checkResult = this.state.result.replace('--', '+')
+      }
+      else if (this.state.result.includes('3+1')
+        || this.state.result.includes('2+2')
+        || this.state.result.includes('10-6')
+        || this.state.result.includes('4*0')
+        || this.state.result.includes('1+3')
+        || this.state.result.includes('16-12')
+        || this.state.result.includes('12/4')
+          || this.state.result.includes('2+2')
+          || this.state.result.includes('2+2')
+          || this.state.result.includes('2+2')){
+
           checkResult = this.showModal();
         }
 
@@ -59,8 +70,12 @@ class App extends Component {
         try {
             this.setState({
                 
-                result: (eval(checkResult) || "" ) + ""
+              result: (eval(checkResult) || "") + "",
+              
+
             })
+         
+        
         } catch (e) {
             this.setState({
                 result: "error"
@@ -79,20 +94,11 @@ class App extends Component {
     this.setState({
       result: this.state.result.slice(0, -1)
     })
-      
 
+      
         
   };
-  
-  player = () => {
-    if (this.state.result === 4) {
-    console.log('yes')
-    } else {
-      return this.state.result
-  }
-  }
-
-  
+    
 
     render() {
       return (

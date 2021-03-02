@@ -9,13 +9,6 @@ export default class Modal extends React.Component {
     this.props.onClose && this.props.onClose(e);
   };
 
-  whichPlayer(num) {
-    if (num = 4) {
-      return 
-    }
-  }
-
-
 
   render() {
     if (!this.props.show) {
