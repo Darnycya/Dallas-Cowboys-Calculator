@@ -124,33 +124,28 @@ class App extends Component {
   
       return (
         <>
-       
-                <div className="calculator-body">
-                    
-                    <Results result={this.state.result}/>
-                    <Keypad onClick={this.onClick}/>
-          </div>
-          
-          {/* <button
-            
-            className="toggle-button"
-            id="centered-toggle-button"
-            onClick={e => {
-              this.showModal();
-         }}
-          >  <p className="X">X</p> </button> */}
+          <div className="container">
 
-              
-          <Modal
+            <div className="modal-body">
+       <Modal
             onClose={this.showModal}
             show={this.state.show}>
             
 
           <div className="image">
-              <img alt="modal" src={this.state.image}></img></div>
+              <img alt="modal" className="player-image" src={this.state.image}></img></div>
             
             
-          </Modal>
+              </Modal>
+              </div>
+
+                <div className="calculator-body">
+                    <Results result={this.state.result}/>
+                    <Keypad onClick={this.onClick}/>
+            </div>
+
+            </div>
+          
           </>
         );
     }

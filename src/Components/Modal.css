@@ -1,6 +1,12 @@
 .modal {
-  margin-top: -700px;
-margin-left: 500px;
+  position:  fixed;
+  margin-left: 45vh;
+  margin-top: -37vh;
+  
+}
+
+.player-image{
+  height: 250px;
 
 }
 
@@ -19,4 +25,25 @@ h2 {
 
 .X {
   font-size: 11px;
+}
+
+@media all and (max-width: 400px) {
+
+  .player-image{
+    height: 250px;
+    width: 370px;
+  
+  }
+
+  .modal {
+    margin-top: -35vh;
+    margin-left: 0;
+    
+  }
+
+
+
+
+
+
 }
