@@ -52,9 +52,10 @@ img {
   .calculator-body {
     max-width: 400px;
    
-    margin-top: 40vh;
+    margin-top: 30vh;
     border: solid 10px black;
-    margin-right: 5px;
+    margin-right: 0;
+    margin-left: 0;
     
   }
 
