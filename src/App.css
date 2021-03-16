@@ -47,3 +47,15 @@ img {
 
 }
 
+@media all and (max-width: 400px) {
+
+  .calculator-body {
+    max-width: 400px;
+   
+    margin-top: 54vh;
+    border: solid 10px black;
+    margin-right: 1vh;
+    
+  }
+
+}

@@ -31,18 +31,25 @@ h2 {
 
   .player-image{
     height: 250px;
-    width: 370px;
+    width: 390px;
   
   }
 
   .modal {
     margin-top: -35vh;
-    margin-left: 0;
+    margin-left: -1vh;
     
   }
 
 
-
+  .close-button {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    margin-left: 40vh;
+    margin-top: -100px;
+    
+  }
 
 
 
