@@ -55,7 +55,10 @@ class App extends Component {
   calculate = () => {
       
     let checkResult = ''
-    let test = this.state.players.filter(i => i.jerseyNumber === (eval(this.state.result)))
+    
+    let test = this.state.players.filter(i => i.jerseyNumber ===
+      // eslint-disable-next-line
+      (eval(this.state.result)))
   
     console.log(this.state.result)
     console.log(test)
@@ -91,7 +94,8 @@ class App extends Component {
         }
 
         try {
-            this.setState({
+          this.setState({
+              // eslint-disable-next-line
               result: (eval(checkResult)),
               
             })
