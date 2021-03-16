@@ -15,10 +15,10 @@ export default class Modal extends React.Component {
       return null;
     }
     return (
-      <div class="modal" id="modal">
-        <div class="content">{this.props.children}</div>
-        <div class="actions">
-          <button class="close-button" onClick={this.onClose}>
+      <div className="modal" id="modal">
+        <div className="content">{this.props.children}</div>
+        <div className="actions">
+          <button className="close-button" onClick={this.onClose}>
             <p className="X">X</p>
           </button>
         </div>

@@ -3,6 +3,7 @@ import './App.css';
 import Results from './Components/Results';
 import Keypad from './Components/Keypad';
 import Modal from './Components/Modal';
+import axios from 'axios'
 
 
 class App extends Component {
@@ -12,67 +13,90 @@ class App extends Component {
     this.state = {
       result: "",
       show: false,
+      players: [],
+      image: ''
     }
-    }
+  }
+
+  
+  
+  componentDidMount() {
+    axios.get(`https://dallas-cowboys-roster.herokuapp.com/players`)
+      .then(res => {
+        const players = res.data;
+        this.setState({ players })
+      
+    })
+  }
   
     showModal = e => {
       this.setState({
         show: !this.state.show
       });
     };
-
-   
-
+  
     onClick = button => {
-
         if(button === "="){
-            this.calculate()
+          this.calculate()
         }
-
         else if(button === "C"){
             this.reset()
         }
         else if(button === "CE"){
             this.backspace()
         }
-
         else {
             this.setState({
-                result: this.state.result + button
+              result: this.state.result + button
             })
         }
     };
-
-
-    calculate = () => {
-      let checkResult = ''
-      console.log(this.state.result)
+  
+  calculate = () => {
+      
+    let checkResult = ''
+    let test = this.state.players.filter(i => i.jerseyNumber === (eval(this.state.result)))
+  
+    console.log(this.state.result)
+    console.log(test)
+    
+    
+    
       if (this.state.result.includes('--')) {
         checkResult = this.state.result.replace('--', '+')
-      }
-      else if (eval(this.state.result) === 4
-      ) {
-          checkResult = this.showModal();
-        }
-
         
-
+      }
+    
+      else if (test.length === 1) {
+        checkResult = this.showModal() 
+        let imageURL = test[0].image
+        console.log(test[0].image)
+        console.log(imageURL)
+        this.setState({
+          image: imageURL
+        })
+        console.log(this.state.image)
+      
+      }
+        
+      // else if (this.state.show === true) {
+      //   this.setState({
+      //     image: test[0].image
+      //   })
+      //   console.log(this.state.image)
+        
+      //   }
         else {
             checkResult = this.state.result
         }
 
         try {
             this.setState({
-                
+              result: (eval(checkResult)),
               
-              result: (eval(checkResult))
-              
-              
-              
-
             })
          
-        
+       
         } catch (e) {
             this.setState({
                 result: "error"
@@ -91,33 +115,30 @@ class App extends Component {
     this.setState({
       result: this.state.result.slice(0, -1)
     })
-
-      
         
   };
-    
-  
-  
+ 
 
+  
   render() {
-    
+  
       return (
         <>
-         
+       
                 <div className="calculator-body">
                     
                     <Results result={this.state.result}/>
                     <Keypad onClick={this.onClick}/>
           </div>
           
-          <button
+          {/* <button
             
-            class="toggle-button"
+            className="toggle-button"
             id="centered-toggle-button"
             onClick={e => {
               this.showModal();
          }}
-          >  <p className="X">X</p> </button>
+          >  <p className="X">X</p> </button> */}
 
               
           <Modal
@@ -126,7 +147,7 @@ class App extends Component {
             
 
           <div className="image">
-              <img src="https://res.cloudinary.com/darnycya/image/upload/v1612424104/Dak_ynbhmz.png"></img></div>
+              <img alt="modal" src={this.state.image}></img></div>
             
             
           </Modal>
