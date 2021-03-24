@@ -59,10 +59,7 @@ class App extends Component {
     let test = this.state.players.filter(i => i.jerseyNumber ===
       // eslint-disable-next-line
       (eval(this.state.result)))
-  
-    console.log(this.state.result)
-    console.log(test)
-    
+
     
     
       if (this.state.result.includes('--')) {
@@ -81,14 +78,7 @@ class App extends Component {
         console.log(this.state.image)
       
       }
-        
-      // else if (this.state.show === true) {
-      //   this.setState({
-      //     image: test[0].image
-      //   })
-      //   console.log(this.state.image)
-        
-      //   }
+     
         else {
             checkResult = this.state.result
         }
