@@ -12,7 +12,7 @@ The Dallas Cowboys Calulator is just that .... a calculator! But unlike the trad
 
 ## API
 
-The API I am using is <a href="https://dallas-api.herokuapp.com/">. I created it using Express, MongoDB and deployed it onto Heroku. Here's a snippet:
+The API I am using is <a href="https://dallas-api.herokuapp.com/"></a>. I created it using Express, MongoDB and deployed it onto Heroku. Here's a snippet:
 
 ```
 {
@@ -28,12 +28,12 @@ updatedAt: "2021-03-12T01:21:19.372Z"
 ```
 
 
-### `calculate()`
+## `calculate()`
 
 Calculate() is where all of the magic happens. I created a variable named `test`. Test filters through the `players` in the API and grabs each of their numbers and compares it to the result of the equation. Then in an if statement, if the length of test = 1, then the result turns into a Modal. And in that Modal the testee's image will be displayed. 
 
-```
-calculate = () => {
+``
+function calculate = () => {
   let checkResult = ''
   let test = this.state.players.filter(i => i.jerseyNumber === 
       (eval(this.state.result)))
@@ -47,8 +47,8 @@ calculate = () => {
              this.setState({
              image: imageURL})}
      
-    } 
-    ```
+    } ```
+
 
 ## Modal
 
