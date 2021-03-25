@@ -9,6 +9,11 @@ The Dallas Cowboys Calulator is just that .... a calculator! But unlike the trad
 
 <a href="https://dallas-cowboy-calculator.netlify.app">Click Here</a>
 
+## Modal
+
+<img src="https://res.cloudinary.com/darnycya/image/upload/v1615357339/Dak_Prescott_4_c5tdat.png">
+
+This is an example of the image that will render in the Modal. 
 
 ## API
 
@@ -48,10 +53,3 @@ function calculate = () => {
              image: imageURL})}
      
     } ```
-
-
-## Modal
-
-<img src="https://res.cloudinary.com/darnycya/image/upload/v1615357339/Dak_Prescott_4_c5tdat.png">
-
-This is an example of the image that will render in the Modal. 
