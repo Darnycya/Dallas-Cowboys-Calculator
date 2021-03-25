@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://media.giphy.com/media/8L3269aXaTI8r7YxjJ/giphy.gif"></img></p>
   
-The Dallas Cowboys Calulator is just that .... a calculator! But unlike the traditional calculator when the results from an equation equals a number of a Dallas Cowboy player, a Modal with their picture and stats will pop up. 
+The Dallas Cowboys Calculator is just that .... a calculator! But unlike the traditional calculator when the results from an equation equals a number of a Dallas Cowboy player, a Modal with their picture and stats will pop up. 
 
 ## Link To Use Calculator
 
