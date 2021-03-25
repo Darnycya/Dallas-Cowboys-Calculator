@@ -17,7 +17,7 @@ This is an example of the image that will render in the Modal.
 
 ## API
 
-The API I am using is <a href="https://dallas-api.herokuapp.com/"></a>. I created it using Express, MongoDB and deployed it onto Heroku. Here's a snippet:
+The API I am using is <a href="https://dallas-api.herokuapp.com/">here</a>. I created it using Express, MongoDB and deployed it onto Heroku. Here's a snippet:
 
 ```
 {
