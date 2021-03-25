@@ -37,7 +37,7 @@ updatedAt: "2021-03-12T01:21:19.372Z"
 
 Calculate() is where all of the magic happens. I created a variable named `test`. Test filters through the `players` in the API and grabs each of their numbers and compares it to the result of the equation. Then in an if statement, if the length of test = 1, then the result turns into a Modal. And in that Modal the testee's image will be displayed. 
 
-``
+```
 function calculate = () => {
   let checkResult = ''
   let test = this.state.players.filter(i => i.jerseyNumber === 
