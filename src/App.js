@@ -70,12 +70,11 @@ class App extends Component {
       else if (test.length === 1) {
         checkResult = this.showModal() 
         let imageURL = test[0].image
-        console.log(test[0].image)
-        console.log(imageURL)
+       
         this.setState({
           image: imageURL
         })
-        console.log(this.state.image)
+        
       
       }
      
