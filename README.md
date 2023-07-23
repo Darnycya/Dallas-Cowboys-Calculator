@@ -7,7 +7,7 @@ The Dallas Cowboys Calculator is just that .... a calculator! But unlike the tra
 
 ## Link To Use Calculator
 
-<a href="https://dallas-cowboys-roster-89666b416610.herokuapp.com/">Click Here</a>
+<a href="https://dallas-cowboy-calculator.netlify.app">Click Here</a>
 
 ## Modal
 
