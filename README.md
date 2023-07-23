@@ -7,7 +7,7 @@ The Dallas Cowboys Calculator is just that .... a calculator! But unlike the tra
 
 ## Link To Use Calculator
 
-<a href="https://dallas-cowboy-calculator.netlify.app">Click Here</a>
+<a href="https://dallas-cowboys-roster-89666b416610.herokuapp.com/">Click Here</a>
 
 ## Modal
 
@@ -17,7 +17,7 @@ This is an example of the image that will render in the Modal.
 
 ## API
 
-The API I am using is <a href="https://dallas-api.herokuapp.com/">here</a>. I created it using Express, MongoDB and deployed it onto Heroku. Here's a snippet:
+The API I am using is <a href="https://dallas-cowboys-roster-89666b416610.herokuapp.com/">here</a>. I created it using Express, MongoDB and deployed it onto Heroku. Here's a snippet:
 
 ```
 {

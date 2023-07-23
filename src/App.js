@@ -21,7 +21,7 @@ class App extends Component {
   
   
   componentDidMount() {
-    axios.get(`https://dallas-cowboys-roster.herokuapp.com/players`)
+    axios.get(`https://dallas-cowboys-roster-89666b416610.herokuapp.com/players`)
       .then(res => {
         const players = res.data;
         this.setState({ players })
